@@ -1,4 +1,4 @@
-web: gunicorn backend-api-django.wsgi
+web: gunicorn backend.wsgi
 
-web: python manage.py runserver --noreload
+web: python manage.py runserver 0.0.0.0:$PORT --noreload
 
